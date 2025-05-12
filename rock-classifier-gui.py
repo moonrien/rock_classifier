@@ -2,10 +2,6 @@ import tkinter as tk
 from tkinter import messagebox
 import joblib
 import numpy as np
-import os
-
-print("Current working directory:", os.getcwd())
-print("Files in this directory:", os.listdir())
 
 model = joblib.load("model.pkl")
 le = joblib.load("label_encoder.pkl")
